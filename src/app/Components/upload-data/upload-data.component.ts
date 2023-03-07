@@ -12,8 +12,9 @@ export class UploadDataComponent {
 
   upLoadedPersons : Person[] = []
 
-  upPersonData(data : JSON) : void {
-    this.dataService.uploadPersonData(data); //temporary
-    console.log(JSON.parse(JSON.stringify(data)).type)
+  upPersonData(form : any) : void {
+    console.log(JSON.stringify(form.value)) //temporary
+    console.log(JSON.parse(JSON.stringify(form.value)))
+    
   }
 }
