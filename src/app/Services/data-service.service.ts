@@ -10,10 +10,10 @@ export class DataServiceService {
   constructor() { }
 
   uploadPersonData(data : JSON) {
-    console.log(data); //temporary
+    console.log((data) + "wil be added into the dataBase"); //temporary
   }
 
-  getPersonData() : Observable<[Person]> {
+  getPersonData() : Observable<Person[]> {
     var fromServerDataJson = "{name : john}" // temporary
     var person : Person = JSON.parse(fromServerDataJson)
     return of([person])

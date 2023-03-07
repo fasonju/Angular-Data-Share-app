@@ -9,4 +9,8 @@ import { Person } from 'src/app/Interfaces/person';
 export class PersonListComponent {
 
   @Input() personList : Person[] = [] 
+
+  ngOnChanges() {
+    //window.location.reload()
+  }
 }
