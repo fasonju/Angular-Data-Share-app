@@ -1,0 +1,10 @@
+
+<form id="form" #questionForm="ngForm" (ngSubmit)="submitQuestion(questionForm.value)"> 
+    <label for="email">Email:</label>
+    <input ngModel name="email" type="email" id="email" placeholder="Your email">
+
+    <label for="question">Your question:</label>
+    <textarea ngModel name="question" id="question"></textarea>
+
+    <input type="submit">
+</form>

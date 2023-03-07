@@ -1,0 +1,28 @@
+
+<form id="form" #dataForm="ngForm" (ngSubmit)="upPersonData(dataForm.value)"> 
+    <label for="name">Name:</label>
+    <input ngModel type="text" name="name" id="name">
+    
+    <label for="surname">Surname:</label>
+    <input ngModel  type="text" name="surname" id="surname">
+
+    <label for="date">Date of birth:</label>
+    <input ngModel type="date" name="birthDate" id="date">
+
+    <label for="heigt">Height (cm):</label>
+    <input ngModel type="number" name="height" id="height">
+
+    <label>Gender:</label>
+    <input ngModel name="sex" type="radio" value="male" id="male">
+    <label for="male" class="radiolabel">Male</label>
+    <input ngModel name="sex" type="radio" value="female" id="female">
+    <label for="female" class="radiolabel">Female</label>
+    <input ngModel name="sex" type="radio" value="other" id="other">
+    <label for="other" class="radiolabel">Other</label>
+    <br>
+
+    <input type="submit">
+</form>
+<app-person-list [personList]="upLoadedPersons"></app-person-list>
+
+
