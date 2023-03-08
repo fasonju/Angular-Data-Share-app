@@ -8,6 +8,6 @@ import { NgForm } from '@angular/forms';
 export class ContactComponent {
   
   submitQuestion(form : NgForm) {
-    console.log(form);
+    console.log(form.value);
   }
 }

@@ -9,6 +9,7 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { UploadDataComponent } from './Components/upload-data/upload-data.component';
 import { PersonListComponent } from './Components/person-list/person-list.component';
+import { FindPersonComponent } from './Components/find-person/find-person.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +18,12 @@ import { PersonListComponent } from './Components/person-list/person-list.compon
     DashboardComponent,
     ContactComponent,
     UploadDataComponent,
-    PersonListComponent
+    PersonListComponent,
+    FindPersonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     FormsModule
   ],
   providers: [],
