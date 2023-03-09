@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
@@ -10,6 +11,7 @@ import { ContactComponent } from './Components/contact/contact.component';
 import { UploadDataComponent } from './Components/upload-data/upload-data.component';
 import { PersonListComponent } from './Components/person-list/person-list.component';
 import { FindPersonComponent } from './Components/find-person/find-person.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { FindPersonComponent } from './Components/find-person/find-person.compon
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

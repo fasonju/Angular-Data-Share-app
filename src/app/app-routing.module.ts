@@ -4,7 +4,7 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { UploadDataComponent } from './Components/upload-data/upload-data.component';
 import { FindPersonComponent } from './Components/find-person/find-person.component';
-import { NgModel } from '@angular/forms';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
