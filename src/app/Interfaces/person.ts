@@ -1,7 +1,7 @@
 export interface Person {
+    socialSecurityNumber : string
     name : string
     surname : string
     birthDate : string
-    height : number
     sex : string
 }

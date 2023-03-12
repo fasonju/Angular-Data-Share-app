@@ -2,13 +2,11 @@
     <tr>
       <th>Name</th>
       <th>Date of Birth</th>
-      <th>Height</th>
       <th>Sex</th>
     </tr>
     <tr *ngFor="let person of personList">
         <th>{{person.name}} {{person.surname}}</th>
         <th>{{person.birthDate}}</th>
-        <th>{{person.height}}</th>
         <th>{{person.sex}}</th>
     </tr>
   </table>
