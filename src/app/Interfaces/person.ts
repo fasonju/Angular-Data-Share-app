@@ -1,5 +1,5 @@
 export interface Person {
-    socialSecurityNumber : string
+    SSN : string
     name : string
     surname : string
     birthDate : string

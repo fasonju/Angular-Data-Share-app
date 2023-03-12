@@ -2,17 +2,22 @@ import { Injectable } from '@angular/core';
 import { Observable, of, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { Person } from '../Interfaces/person';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataServiceService {
+  private endpoint : string = "person"
+  private domain : string | undefined
 
-  constructor(private http : HttpClient) { }
+  constructor(private http : HttpClient) {
+      this.domain = "https://localhost:7169/"
+   }
 
-  uploadPersonData(data : JSON) {
-    console.log((data) + "wil be added into the dataBase"); //temporary
+
+  uploadPersonData(data : Person) {
+    this.http.post<Person>("https://localhost:7169/person", data).subscribe()
   }
 
   getPersonData() : Observable<Person[]> {
